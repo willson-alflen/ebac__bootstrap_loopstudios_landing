@@ -1,0 +1,169 @@
+body {
+  font-family: "Alata", sans-serif;
+  font-size: 15px;
+}
+
+#hero .navbar-nav li a {
+  color: #fff;
+}
+
+.hero-bg-image {
+  background-image: url("/assets/images/mobile/image-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.bgChangeScroll {
+  backdrop-filter: invert(70%);
+  padding: 10px 20px;
+}
+
+button.navbar-toggler {
+  border-color: #fff;
+  width: 50px;
+}
+
+span.navbar-toggler-icon {
+  color: #fff;
+  width: 25px;
+}
+
+.hero-text {
+  border: 1px solid #fff;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  right: 10%;
+  width: 350px;
+}
+
+.hero-text p {
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 1;
+  margin-top: 20px;
+}
+
+.vr-bg-image {
+  background-image: url("/assets/images/mobile/image-interactive.jpg");
+  height: 450px;
+}
+
+section#virtual-reality img {
+  width: 100%;
+}
+
+section h2 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+section#virtual-reality p {
+  color: hsl(0, 0%, 55%);
+}
+
+section#our-creations {
+  min-height: 600px;
+}
+
+section#our-creations button {
+  color: #fff;
+  background-color: #22a39f;
+}
+
+section#our-creations img {
+  height: 200px;
+  object-fit: cover;
+}
+
+#footer .container {
+  background-color: hsl(0, 0%, 0%);
+  color: #fff;
+}
+
+#footer #social-links li {
+  transition: 0.5s;
+}
+
+#footer #social-links li:hover {
+  cursor: pointer;
+  transform: translateY(-8px);
+}
+
+#footer span.copyright {
+  color: hsl(0, 0%, 100%, 0.5);
+}
+
+.attribution {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  #hero .navbar-nav {
+    backdrop-filter: blur(10px);
+  }
+
+  #hero .navbar-nav li a:hover {
+    background-color: #3232ff;
+  }
+
+  section#our-creations aside {
+    margin-bottom: 20px;
+  }
+
+  #footer #social-links {
+    padding: 0 130px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #hero-header .navbar-brand img {
+    width: 250px;
+  }
+
+  #hero-header .navbar-nav li a {
+    font-size: 1.2rem;
+  }
+
+  .hero-bg-image {
+    background-image: url("/assets/images/desktop/image-hero.jpg");
+  }
+
+  .hero-text {
+    width: 500px;
+  }
+
+  .hero-text p {
+    font-size: 60px;
+    margin-left: 20px;
+  }
+
+  .vr-bg-image {
+    background-image: url("/assets/images/desktop/image-interactive.jpg");
+    background-repeat: no-repeat;
+    height: 600px;
+    background-size: contain;
+  }
+
+  #vr-text {
+    background-color: #fff;
+    margin-top: -265px;
+    margin-left: 750px;
+    width: 350px;
+    text-align: left;
+    padding: 50px 0 0 50px;
+  }
+
+  #vr-text p {
+    font-size: 11px;
+  }
+
+  section#our-creations img {
+    height: 300px;
+  }
+}
