@@ -3,6 +3,9 @@ body {
   font-size: 15px;
 }
 
+/*===================================
+SECTION HERO
+=====================================*/
 #hero .navbar-nav li a {
   color: #fff;
 }
@@ -17,8 +20,11 @@ body {
 }
 
 .bgChangeScroll {
-  backdrop-filter: invert(70%);
-  padding: 10px 20px;
+  backdrop-filter: blur(20px);
+}
+
+.bgChangeScroll700 {
+  background-color: black;
 }
 
 button.navbar-toggler {
@@ -49,12 +55,13 @@ span.navbar-toggler-icon {
   margin-top: 20px;
 }
 
+/*===================================
+SECTION VIRTUAL REALITY
+=====================================*/
+
 .vr-bg-image {
   background-image: url("/assets/images/mobile/image-interactive.jpg");
   height: 450px;
-}
-
-section#virtual-reality img {
   width: 100%;
 }
 
@@ -67,6 +74,9 @@ section#virtual-reality p {
   color: hsl(0, 0%, 55%);
 }
 
+/*===================================
+SECTION OUR CREATIONS
+=====================================*/
 section#our-creations {
   min-height: 600px;
 }
@@ -80,6 +90,10 @@ section#our-creations img {
   height: 200px;
   object-fit: cover;
 }
+
+/*===================================
+FOOTER
+=====================================*/
 
 #footer .container {
   background-color: hsl(0, 0%, 0%);
@@ -99,10 +113,18 @@ section#our-creations img {
   color: hsl(0, 0%, 100%, 0.5);
 }
 
+/*===================================
+ATTRIBUTION
+=====================================*/
+
 .attribution {
   font-size: 12px;
 }
 
+/*===================================
+MEDIA QUERIES
+=====================================*/
+/* mobile */
 @media screen and (max-width: 767px) {
   #hero .navbar-nav {
     backdrop-filter: blur(10px);
@@ -121,6 +143,7 @@ section#our-creations img {
   }
 }
 
+/* tablet */
 @media screen and (min-width: 768px) {
   #hero-header .navbar-brand img {
     width: 250px;
@@ -132,6 +155,7 @@ section#our-creations img {
 
   .hero-bg-image {
     background-image: url("/assets/images/desktop/image-hero.jpg");
+    background-position: center;
   }
 
   .hero-text {
@@ -146,14 +170,35 @@ section#our-creations img {
   .vr-bg-image {
     background-image: url("/assets/images/desktop/image-interactive.jpg");
     background-repeat: no-repeat;
+  }
+
+  section#our-creations img {
+    height: 300px;
+  }
+}
+
+/* laptop */
+@media screen and (min-width: 1000px) {
+  #virtual-reality .container .row {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
     height: 600px;
-    background-size: contain;
+  }
+
+  .vr-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    background-size: cover;
   }
 
   #vr-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     background-color: #fff;
-    margin-top: -265px;
-    margin-left: 750px;
     width: 350px;
     text-align: left;
     padding: 50px 0 0 50px;
@@ -161,9 +206,5 @@ section#our-creations img {
 
   #vr-text p {
     font-size: 11px;
-  }
-
-  section#our-creations img {
-    height: 300px;
   }
 }
