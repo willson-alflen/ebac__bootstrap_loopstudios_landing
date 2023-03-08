@@ -1,11 +1,13 @@
 body {
   font-family: "Alata", sans-serif;
   font-size: 15px;
+  overflow-x: hidden;
 }
 
 /*===================================
 SECTION HERO
 =====================================*/
+
 #hero .navbar-nav li a {
   color: #fff;
 }
@@ -14,6 +16,7 @@ SECTION HERO
   background-image: url("/assets/images/mobile/image-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 800px;
   width: 100vw;
   margin: 0 auto;
@@ -30,6 +33,7 @@ SECTION HERO
 button.navbar-toggler {
   border-color: #fff;
   width: 50px;
+  box-shadow: none !important;
 }
 
 span.navbar-toggler-icon {
@@ -40,17 +44,17 @@ span.navbar-toggler-icon {
 .hero-text {
   border: 1px solid #fff;
   position: absolute;
-  top: 30%;
+  top: 45%;
   left: 15%;
   right: 10%;
-  width: 350px;
+  width: 250px;
 }
 
 .hero-text p {
   font-family: "Josefin Sans", sans-serif;
   color: #fff;
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 32px;
   line-height: 1;
   margin-top: 20px;
 }
@@ -61,7 +65,10 @@ SECTION VIRTUAL REALITY
 
 .vr-bg-image {
   background-image: url("/assets/images/mobile/image-interactive.jpg");
-  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
   width: 100%;
 }
 
@@ -77,6 +84,7 @@ section#virtual-reality p {
 /*===================================
 SECTION OUR CREATIONS
 =====================================*/
+
 section#our-creations {
   min-height: 600px;
 }
@@ -124,6 +132,7 @@ ATTRIBUTION
 /*===================================
 MEDIA QUERIES
 =====================================*/
+
 /* mobile */
 @media screen and (max-width: 767px) {
   #hero .navbar-nav {
